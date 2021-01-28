@@ -16,7 +16,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class AnagramTest
 {
     @ParameterizedTest
-    @CsvSource(value = { "geeksforgeeks, forgeeksgeeks", "aaa, aaa", "EMPTY, EMPTY" }, emptyValue = "EMPTY")
+    @CsvSource({ "geeksforgeeks, forgeeksgeeks", "aaa, aaa"})
     public void testIsAnagram_true(final String s1, final String s2) {
         assertTrue(Anagram.isAnagram(s1, s2));
     }

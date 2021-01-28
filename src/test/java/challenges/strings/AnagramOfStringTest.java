@@ -1,4 +1,4 @@
-package challenges.strings.anagram;
+package challenges.strings;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -18,6 +18,6 @@ public class AnagramOfStringTest
     @CsvSource({ "bcadeh, hea, 3", "cddgk, gcd, 2", "crap, arcp, 0", "abcd, efgh, 8",
             "basgadhbfgvhads, sjdhgvbjdsbhvbvd, 11" })
     public void testRemAnagrams(final String s1, final String s2, final int expected) {
-        assertEquals(expected, new AnagramOfString().remAnagrams(s1, s2));
+        assertEquals(expected, AnagramOfString.remAnagrams(s1, s2));
     }
 }

@@ -12,8 +12,8 @@ public class AnagramOfString
     /**
      * Checks if two strings are anagrams of each other, and how many characters must be removed (total from both strings) to turn them into anagrams of each other.
      *
-     * @param s a string of length [1, 10^5]
-     * @param s1 a string of length [1, 10^5]
+     * @param s a string of length [1, 10^5].
+     * @param s1 a string of length [1, 10^5].
      * @return the minimum number of characters <i>total from both strings</i> that must be deleted to turn the give strings into anagrams of each other.
      */
     public static int remAnagrams(final String s, final String s1) {

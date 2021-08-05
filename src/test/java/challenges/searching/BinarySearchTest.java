@@ -12,12 +12,13 @@ public class BinarySearchTest
 {
     @ParameterizedTest
     @MethodSource("testBinarySearch_tests")
-    public void testBinarySearch(final int toFind, final int[] array, final int expectedLocationIndex) {
-        assertEquals(expectedLocationIndex, BinarySearch.binarySearch(toFind, array.length, array));
+    public void testBinarySearch(final int target, final int[] array, final int expectedLocationIndex) {
+        assertEquals(expectedLocationIndex, BinarySearch.binarySearch(target, array.length, array));
     }
 
     private static Stream<Arguments> testBinarySearch_tests() {
         return Stream.of(Arguments.of(4, new int[] { 1, 2, 3, 4, 5 }, 3),
-                Arguments.of(445, new int[] { 11, 22, 33, 44, 55 }, -1));
+                Arguments.of(445, new int[] { 11, 22, 33, 44, 55 }, -1),
+                Arguments.of(4, new int[] { 1, 2, 3, 4, 5, 6 }, 3));
     }
 }

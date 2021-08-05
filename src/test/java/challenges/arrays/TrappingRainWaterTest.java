@@ -17,15 +17,12 @@ public class TrappingRainWaterTest
     }
 
     private static Stream<Arguments> testTrappingWater_tests() {
-        return Stream
-                .of(
-                        Arguments.of(new int[] { 3, 0, 0, 2, 0, 4 }, 10),
-                        Arguments.of(new int[] { 4, 0, 0, 2, 0, 3 }, 10),
-                        Arguments.of(new int[] { 7, 4, 0, 9 }, 10),
-                        Arguments.of(new int[] { 9, 4, 0, 7 }, 10),
-                        Arguments.of(new int[] { 6, 9, 9 }, 0),
-                        Arguments.of(new int[] { 9, 9, 6 }, 0),
-                        Arguments.of(new int[] { 8, 8, 2, 4, 5, 5, 1 }, 4),
-                        Arguments.of(new int[] { 1, 5, 5, 4, 2, 8, 8 }, 4));
+        return Stream.of(
+//                Arguments.of(new int[] { 3, 0, 0, 2, 0, 4 }, 10),
+//                Arguments.of(new int[] { 7, 4, 0, 9 }, 10),
+//                Arguments.of(new int[] { 6, 9, 9 }, 0),
+//                Arguments.of(new int[] { 8, 8, 2, 4, 5, 5, 1 }, 4),
+//                Arguments.of(new int[] { 1, 1, 5, 2, 7, 6, 1, 4, 2, 3 }, 7),
+                Arguments.of(new int[] { 6, 1, 8, 9, 2, 7, 9, 5, 4, 3 }, 14));
     }
 }
